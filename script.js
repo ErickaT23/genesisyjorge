@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //--- Botón para añadir al calendario ---
 window.addToCalendar = function () {
-  const calendarURL = "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NXU4ZjVtMmtobHNsanI3aXJnN3ZuOWlqZ20gY182OTRhZWE0ODlhN2FkZTJiYzRmYjRiNGExYTE2ZmY3ZDY2ZjAzNzFlMTgwY2I1MzZmM2M3YzE2NGUxZWMwOGIxQGc&tmsrc=c_694aea489a7ade2bc4fb4b4a1a16ff7d66f0371e180cb536f3c7c164e1ec08b1%40group.calendar.google.com";
+  const calendarURL = "https://www.google.com/calendar/render?action=TEMPLATE&text=La%20boda%20de%20G%C3%A9nesis%20%26%20Jorge&dates=20250726/20250727&details=Misa%20Iglesia%20San%20Francisco%20(Zona%201)%20a%20las%2015:00%20hrs.%20Recepci%C3%B3n%20en%20Hotel%20Conquistador%20(Zona%204)%20a%20las%2018:00%20hrs.&location=Ciudad%20de%20Guatemala&sf=true&output=xml";
   window.open(calendarURL, "_blank");
 }
 
@@ -265,84 +265,15 @@ function addToCalendar() {
   }
   
   //OPTIMIZAR
-
-  // 🚀 Confirmación personalizada al Google Sheet
-const confirmForm = document.getElementById('confirmForm');
-
-confirmForm.addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  const respuesta = document.querySelector('input[name="respuesta"]:checked').value;
-
-  // Busca el invitado actual desde load.js
   const params = new URLSearchParams(window.location.search);
-  const guestId = params.get("id");
-  const guest = guests.find(g => g.id === guestId);
+const guestId = params.get("id");
+const guest = window.guests.find(g => g.id === guestId);
 
-  if (!guest) {
-    alert("Invitado no válido");
-    return;
-  }
-
-  const datos = {
-    nombre: guest.name,
-    pases: guest.passes,
-    respuesta: respuesta
+if (guest) {
+  const formURL = `https://docs.google.com/forms/d/e/1FAIpQLSf1G9MV0VkOquqL_FWGeGQSDlR8EZgCQ_INftAufs7kkEb11g/viewform?usp=pp_url&entry.42292443=${encodeURIComponent(guest.name)}&entry.800985369=${guest.passes}`;
+  
+  const confirmButton = document.getElementById('confirm-button');
+  confirmButton.onclick = () => {
+    window.open(formURL, '_blank');
   };
-
-  fetch('https://script.google.com/macros/s/AKfycbzTQ3_Vmk0t0D5B8p1WDX39kJdcFUfUjqbfBlyKtam803vT4zKEFLxcnxDCQce-2ioJHQ/exec', {
-    method: 'POST',
-    body: JSON.stringify(datos),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  .then(res => res.json())
-  .then(data => {
-    alert("¡Gracias por confirmar! 🎉");
-    confirmForm.reset();
-  })
-  .catch(err => {
-    console.error("Error al enviar confirmación:", err);
-    alert("Ocurrió un error. Intenta de nuevo.");
-  });
-});
-
-
-confirmForm.addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  const respuesta = document.querySelector('input[name="respuesta"]:checked').value;
-
-  const params = new URLSearchParams(window.location.search);
-  const guestId = params.get("id");
-  const guest = window.guests.find(g => g.id === guestId);  // window.guests desde loads.js
-
-  if (!guest) {
-    alert("Invitado no válido");
-    return;
-  }
-
-  const datos = {
-    nombre: guest.name,
-    pases: guest.passes,
-    respuesta: respuesta
-  };
-
-  fetch('https://script.google.com/macros/s/AKfycbzTQ3_Vmk0t0D5B8p1WDX39kJdcFUfUjqbfBlyKtam803vT4zKEFLxcnxDCQce-2ioJHQ/exec', {
-    method: 'POST',
-    body: JSON.stringify(datos),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  .then(res => res.json())
-  .then(data => {
-    alert(`¡Gracias por confirmar, ${guest.name}! 🎉`);
-    confirmForm.reset();
-  })
-  .catch(err => {
-    console.error("Error al enviar confirmación:", err);
-    alert("Ocurrió un error. Intenta de nuevo.");
-  });
-});
+}

@@ -129,6 +129,7 @@
   /* HERO (Foto inicial) */
   #hero {
     position: relative;
+    margin-top: 30px;
   }
   #hero img {
     width: 100%;
@@ -453,6 +454,7 @@
     box-shadow: var(--shadow);
     cursor: pointer;
     transition: transform 0.3s;
+    filter: grayscale(0.7);
   }
   #gallery-container img:hover {
     transform: scale(1.05);
@@ -500,6 +502,7 @@
   }
   #wishes-section p{
     font-size: var(--font-size-text);
+    padding: 10px;
   }  
   #show-wishes button {
     margin-top: 10px;
@@ -558,6 +561,7 @@
   #no-children-section {
     background: transparent;
     border-radius: 10px;
+    margin-top: 40px;
   }
   #no-children-section h2{
     font-size: var(--font-size-title-small);
@@ -629,6 +633,7 @@
   #final-photo {
     width: 100%;
     height: auto;
+    filter: grayscale(0.7)
   }
   
   /* FRASE FINAL */
@@ -740,7 +745,6 @@
   #visual-itinerary-section h2 {
     font-size: var(--font-size-title-small);
     text-align: center;
-    margin-bottom: 40px;
   }
   
   .timeline-center {
@@ -768,9 +772,8 @@
   
   .timeline-block {
     width: 45%;
-    padding: 10px;
+    padding: 5px;
     position: relative;
-    margin-bottom: 30px;
   }
   
   .timeline-block.left {
@@ -789,7 +792,6 @@
     background: white;
     padding: 10px 15px;
     border-radius: 10px;
-    box-shadow: var(--shadow);
     display: inline-block;
     position: relative;
     z-index: 2; /* Para que quede encima de la línea */
@@ -798,7 +800,6 @@
   .icon-time {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
   }
   
   .icon-time .time {
@@ -820,7 +821,7 @@
   /* RESPONSIVE: mantiene alternancia y línea al centro */
   @media (max-width: 768px) {
     .timeline-block {
-      width: 90%;
+      width: 50%;
     }
   
     .timeline-block.left {

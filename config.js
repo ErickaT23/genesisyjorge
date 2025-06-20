@@ -1,6 +1,6 @@
 export const eventData = {
     couple: {
-      names: "Genesis & Jorge",
+      names: "Génesis & Jorge",
       date: "26 . 07 . 2025",
       heroImage: "/images/2.png"
     },
@@ -32,14 +32,13 @@ export const eventData = {
       description: "Traje formal, el blanco queda reservado exclusivamente para la novia.",
       image: "/images/dresscode.png",
       inspiration: {
-        women: "https://www.pinterest.com/search/pins/?q=Vestidos%20invitadas%20de%20boda%20de%20día",
+        women: "https://es.pinterest.com/search/pins/?q=vestidos%20para%20boda%20formal%20invitada%20noche&rs=guide&journey_depth=1&source_module_id=OB_vestidos%2520para%2520boda%2520formal%2520invitada%2520noche_ab9e5a00-d97f-42c4-8615-56309ea9d8fd&add_refine=Vestidos%20para%7Cguide%7Cword%7C2",
         men: "https://www.pinterest.com/search/pins/?q=Traje%20formal%20de%20hombres%20invitados%20a%20boda"
       }
     },  
     gallery: [
       "/images/V1.jpeg",
       "/images/V2.jpeg",
-      "/images/V3.jpeg",
       "/images/V4.jpeg",
       "/images/H1.jpeg",
     ],
