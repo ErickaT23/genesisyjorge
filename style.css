@@ -88,11 +88,11 @@
     transition: transform 1s ease;
   }
   #envelope-top {
-    background-image: url('/images/sobre.png'); /* Usa tu imagen */
+    background-image: url('/images/sobre.svg'); /* Usa tu imagen */
     background-position: top center;
   }
   #envelope-bottom {
-    background-image: url('/images/sobre.png'); /* Usa tu imagen */
+    background-image: url('/images/sobre.svg'); /* Usa tu imagen */
     background-position: bottom center;
   }
   #seal {
@@ -153,7 +153,7 @@
   }
   /* SECCIÓN MÚSICA */
   #music-section {
-    background-image: url(/images/82.png);
+    background-image: url(/images/play.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

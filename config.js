@@ -2,7 +2,7 @@ export const eventData = {
     couple: {
       names: "Génesis & Jorge",
       date: "26 . 07 . 2025",
-      heroImage: "/images/2.png"
+      heroImage: "/images/pareja.svg"
     },
     song: {
       title: "Admv (cover) - Angie Camille",
@@ -26,11 +26,11 @@ export const eventData = {
     },
 
     abroadGiftMessage: "Su presencia en nuestra boda es el mejor regalo que podríamos recibir. Si desean obsequiarnos algo más, una contribución económica será muy apreciada para ayudarnos a comenzar esta nueva etapa juntos.",
-    giftImage: "/images/gift.png",
+    giftImage: "/images/gift.svg",
     
     dresscode: {
       description: "Traje formal, el blanco queda reservado exclusivamente para la novia.",
-      image: "/images/dresscode.png",
+      image: "/images/dresscode.svg",
       inspiration: {
         women: "https://es.pinterest.com/search/pins/?q=vestidos%20para%20boda%20formal%20invitada%20noche&rs=guide&journey_depth=1&source_module_id=OB_vestidos%2520para%2520boda%2520formal%2520invitada%2520noche_ab9e5a00-d97f-42c4-8615-56309ea9d8fd&add_refine=Vestidos%20para%7Cguide%7Cword%7C2",
         men: "https://www.pinterest.com/search/pins/?q=Traje%20formal%20de%20hombres%20invitados%20a%20boda"
@@ -47,7 +47,7 @@ export const eventData = {
     finalPhoto: "/images/V3.jpeg",
     finalMessage: "Porque el amor se celebra con quienes más queremos, esperamos contar con su presencia en este día inolvidable.",
     rsvp: {
-      rsvpImage: "/images/rsvp.png",
+      rsvpImage: "/images/rsvp.svg",
       whatsapp: "https://wa.me/50236011737?text=Confirmo%20mi%20asistencia%20a%20la%20boda",
       email: "mailto:hello@thetwodesign.com"
     },
