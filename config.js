@@ -9,7 +9,7 @@ export const eventData = {
       file: "/Maluma - ADMV Cover Angie Camille.mp3"
     },
     ceremony: {
-      ceremonyImage:"/images/ceremon.png",
+      ceremonyImage:"/images/ceremonia.svg",
       place: "Iglesia San Francisco",
       address: "6-34, 13 Calle 1, Zona 1, Cdad. de Guatemala",
       date: "26 de Julio",
@@ -17,7 +17,7 @@ export const eventData = {
       mapLink: "https://maps.app.goo.gl/F3hRkoQM8zVMiW9u6"
     },
     reception: {
-      receptionImage:"/images/reception.png",
+      receptionImage:"/images/recepcion.svg",
       place: "Hotel Conquistador",
       address: "Via 5 4-68, Zona 4, Cdad. de Guatemala",
       date: "26 de Julio",
