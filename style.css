@@ -11,8 +11,8 @@
     --accent-color: #8FBC8B;
     
     /* Tipografías */
-    --font-title: 'The Girl Next Door', cursive;
-    --font-body: 'Give You Glory', cursive;
+    --font-title: "Carattere", cursive;
+    --font-body: "Cormorant Garamond", serif;
     
     /* Tamaños de letra */
     --font-size-title: 3rem;
@@ -134,7 +134,6 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   .hero-text {
     position: absolute;
@@ -149,7 +148,7 @@
     margin-top: -250px;
   }
   .hero-text h2{
-    margin-top: -30px;
+    margin-top: -20px;
   }
   /* SECCIÓN MÚSICA */
   #music-section {
@@ -319,13 +318,11 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   #reception img {
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   #itinerary-section button {
     margin-top: 10px;
@@ -346,7 +343,6 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   #gift-section {
     text-align: center;
@@ -402,7 +398,6 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   #playlist-button{
     margin-top: 10px;
@@ -430,7 +425,6 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   #dresscode-inspo button{
     margin-top: 10px;
@@ -586,7 +580,6 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
     margin-bottom: 50px;
   }
   #album-section p{
@@ -627,7 +620,6 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 50px;
   }
   /* FOTO FINAL */
   #final-photo-section{
@@ -711,7 +703,6 @@
     background-color: transparent;
     border-radius: 10px;
     padding: 40px 20px;
-    margin: 20px auto;
   }
   
   #blessings-section h2 {
@@ -742,7 +733,6 @@
     background-color:transparent;
     border-radius: 10px;
     padding: 40px 20px;
-    margin: 20px auto;
     max-width: 900px;
     position: relative;
   }

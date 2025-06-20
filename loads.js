@@ -35,3 +35,4 @@ const guests = [
   
   });
   
+  window.guests = guests; 

@@ -45,7 +45,7 @@ export const eventData = {
     ],
 
     noKidsPolicy: "Para disfrutar plenamente de esta celebración, nuestra boda será solo para adultos.",
-    finalPhoto: "/images/10.png",
+    finalPhoto: "/images/V3.jpeg",
     finalMessage: "Porque el amor se celebra con quienes más queremos, esperamos contar con su presencia en este día inolvidable.",
     rsvp: {
       rsvpImage: "/images/rsvp.png",

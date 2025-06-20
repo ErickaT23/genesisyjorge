@@ -194,8 +194,6 @@ document.getElementById('show-wishes').addEventListener('click', () => {
   // --- Confirmaciones ---
   document.getElementById('rsvp-image').src = eventData.rsvp.rsvpImage;
   document.getElementById('rsvp-message').innerText = "Para nosotros es muy importante que confirmes tu asistencia antes del 01 de Junio, o bien indicarnos si no podrás acompañarnos.";
-  document.getElementById('whatsapp-confirm').onclick = () => window.open(eventData.rsvp.whatsapp, '_blank');
-  document.getElementById('email-confirm').onclick = () => window.open(eventData.rsvp.email, '_blank');
 
   // --- Footer (redes sociales) ---
   const socialIcons = document.getElementById('social-icons');
@@ -268,4 +266,83 @@ function addToCalendar() {
   
   //OPTIMIZAR
 
-  
+  // 🚀 Confirmación personalizada al Google Sheet
+const confirmForm = document.getElementById('confirmForm');
+
+confirmForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const respuesta = document.querySelector('input[name="respuesta"]:checked').value;
+
+  // Busca el invitado actual desde load.js
+  const params = new URLSearchParams(window.location.search);
+  const guestId = params.get("id");
+  const guest = guests.find(g => g.id === guestId);
+
+  if (!guest) {
+    alert("Invitado no válido");
+    return;
+  }
+
+  const datos = {
+    nombre: guest.name,
+    pases: guest.passes,
+    respuesta: respuesta
+  };
+
+  fetch('https://script.google.com/macros/s/AKfycbzTQ3_Vmk0t0D5B8p1WDX39kJdcFUfUjqbfBlyKtam803vT4zKEFLxcnxDCQce-2ioJHQ/exec', {
+    method: 'POST',
+    body: JSON.stringify(datos),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(res => res.json())
+  .then(data => {
+    alert("¡Gracias por confirmar! 🎉");
+    confirmForm.reset();
+  })
+  .catch(err => {
+    console.error("Error al enviar confirmación:", err);
+    alert("Ocurrió un error. Intenta de nuevo.");
+  });
+});
+
+
+confirmForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const respuesta = document.querySelector('input[name="respuesta"]:checked').value;
+
+  const params = new URLSearchParams(window.location.search);
+  const guestId = params.get("id");
+  const guest = window.guests.find(g => g.id === guestId);  // window.guests desde loads.js
+
+  if (!guest) {
+    alert("Invitado no válido");
+    return;
+  }
+
+  const datos = {
+    nombre: guest.name,
+    pases: guest.passes,
+    respuesta: respuesta
+  };
+
+  fetch('https://script.google.com/macros/s/AKfycbzTQ3_Vmk0t0D5B8p1WDX39kJdcFUfUjqbfBlyKtam803vT4zKEFLxcnxDCQce-2ioJHQ/exec', {
+    method: 'POST',
+    body: JSON.stringify(datos),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(res => res.json())
+  .then(data => {
+    alert(`¡Gracias por confirmar, ${guest.name}! 🎉`);
+    confirmForm.reset();
+  })
+  .catch(err => {
+    console.error("Error al enviar confirmación:", err);
+    alert("Ocurrió un error. Intenta de nuevo.");
+  });
+});

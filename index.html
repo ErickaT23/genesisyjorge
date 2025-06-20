@@ -10,8 +10,9 @@
   <script type="module" src="loads.js" defer></script>
   <script type="module" src="database.js" defer></script> <!-- ✅ PRIMERO database -->
   <script type="module" src="script.js" defer></script>   <!-- ✅ LUEGO script -->
-  
-  <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
     <section id="envelope">
         <div id="envelope-top"></div>
          <div id="seal">
-            <h2>G & J</h2> <!-- Tus iniciales -->
+            <h2>G | J</h2> <!-- Tus iniciales -->
         </div>
         <div id="envelope-bottom"></div>
     </section>
@@ -263,8 +264,18 @@
        <img id="rsvp-image" alt="rsvp">
       <h2>Confirmación</h2>
       <p id="rsvp-message"></p>
-      <button id="whatsapp-confirm">Confirmar por WhatsApp</button>
-      <button id="email-confirm">Confirmar por Email</button>
+      <form id="confirmForm">
+        <p>Por favor confirma tu asistencia aquí:</p>
+        <div>
+          <label>
+            <input type="radio" name="respuesta" value="Sí" required> Sí
+          </label>
+          <label>
+            <input type="radio" name="respuesta" value="No"> No
+          </label>
+        </div>
+        <button type="submit">Enviar Confirmación</button>
+      </form>      
     </section>
 
     <!-- Foto final -->
