@@ -302,7 +302,7 @@
     background-color: #afd2accf;
   }
   #guest-name-section p, #passes-section p {
-    font-size: var(--font-size-text);
+    font-size: 1.5rem;
   }
   /* ITINERARIO */
   #itinerary-section {
@@ -351,14 +351,13 @@
   }
   .bank-toggle {
     font-size: var(--font-size-text);
-    padding: 12px 24px;
+    padding: 10px 20px;
     background-color: var(--accent-color);
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: var(--shadow);
-    width: 100%;
     max-width: 500px;
     text-align: center;
     transition: background 0.3s;
@@ -817,7 +816,27 @@
     font-size: var(--font-size-text);
     margin: 0;
   }
-  
+  .whatsapp-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .whatsapp-buttons button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    width: 60%;
+  }
+  .whatsapp-buttons button:hover {
+    background-color: var(--text-color);
+  }
+  .whatsapp-reminder {
+    margin-top: 20px;
+    font-size: var(--font-size-text);
+  } 
   /* RESPONSIVE: mantiene alternancia y línea al centro */
   @media (max-width: 768px) {
     .timeline-block {

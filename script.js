@@ -277,3 +277,9 @@ if (guest) {
     window.open(formURL, '_blank');
   };
 }
+
+// --- CUENTAS ---
+window.toggleBankInfo = function () {
+  const info = document.getElementById("bank-info");
+  info.classList.toggle("open");
+};

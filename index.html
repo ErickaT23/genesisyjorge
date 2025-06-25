@@ -90,6 +90,7 @@
     <!-- Cantidad de pases -->
     <section id="passes-section">
       <p>Invitación válida por <span id="passes"></span></p>
+      <p>Su mesa asignada es la no. <span id="guest-table"></span></p>
     </section>
 
         <!-- Bendiciones -->
@@ -300,11 +301,25 @@
     
     <!-- Lluvia de sobres -->
     <section id="gift-section">
-        <img id="gift-image" alt="gift">
+      <img id="gift-image" alt="gift">
       <h2>Lluvia de Sobres</h2>
       <p id="abroad-gift-message"></p>
-      <p id="abroad-gift-message"></p>
+
+    <button class="bank-toggle" onclick="toggleBankInfo()">Ver cuenta</button>
+
+     <!-- Info de cuentas desplegable -->
+     <div id="bank-info" class="bank-details">
+    <p><strong>Cuenta Bancaria:</strong><br> Banco Industrial<br>Cuenta Monetaria<br>No. 3840130003 <br>Pivaral Gordillo Jorge Roberto</p>
+     </div>
+     <!-- WhatsApp fuera del div -->
+      <p class="whatsapp-reminder">Envíanos un WhatsApp cuando hagas tu transferencia:</p>
+      <div class="whatsapp-buttons">
+    <button onclick="window.open('https://wa.me/50241536384?text=Hola%20Génesis,%20te%20confirmo%20mi%20transferencia.', '_blank')">Contactar a Génesis</button>
+    <button onclick="window.open('https://wa.me/50233775265?text=Hola%20Jorge,%20te%20confirmo%20mi%20transferencia.', '_blank')">Contactar a Jorge</button>
+      </div>
     </section>
+
+
 
     <!-- Dress code -->
     <section id="dresscode-section">
