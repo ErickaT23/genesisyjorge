@@ -13,7 +13,7 @@ export const eventData = {
       place: "Iglesia San Francisco",
       address: "6-34, 13 Calle 1, Zona 1, Cdad. de Guatemala",
       date: "26 de Julio",
-      time: "15:00 hrs",
+      time: "17:00 hrs",
       mapLink: "https://maps.app.goo.gl/F3hRkoQM8zVMiW9u6"
     },
     reception: {
@@ -21,7 +21,7 @@ export const eventData = {
       place: "Hotel Conquistador",
       address: "Via 5 4-68, Zona 4, Cdad. de Guatemala",
       date: "26 de Julio",
-      time: "18:00 hrs",
+      time: "19:00 hrs",
       mapLink: "https://maps.app.goo.gl/qGEPHjSEeFPtQpVK7"
     },
 
