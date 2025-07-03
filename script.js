@@ -193,7 +193,7 @@ document.getElementById('show-wishes').addEventListener('click', () => {
 
   // --- Confirmaciones ---
   document.getElementById('rsvp-image').src = eventData.rsvp.rsvpImage;
-  document.getElementById('rsvp-message').innerText = "Para nosotros es muy importante que confirmes tu asistencia antes del 01 de Junio, o bien indicarnos si no podrás acompañarnos.";
+  document.getElementById('rsvp-message').innerText = "Para nosotros es muy importante que confirmes tu asistencia antes del 10 de Julio, o bien indicarnos si no podrás acompañarnos.";
 
   // --- Footer (redes sociales) ---
   const socialIcons = document.getElementById('social-icons');
