@@ -66,7 +66,7 @@ const guests = [
   { id: "64", name: "Gerardo & Paty", passes: 3, table: 7, gender: "mixto" },
   { id: "65", name: "Karen", passes: 1, table: 7, gender: "femenino" },
   { id: "66", name: "Guillermo & Doris", passes: 4, table: 9, gender: "mixto" },
-  { id: "67", name: "Marisol", passes: 2, table: 9, gender: "femenino" },
+  { id: "67", name: "Marisol", passes: 3, table: 15, gender: "femenino" },
   { id: "68", name: "Hugo & Marcia", passes: 4, table: 9, gender: "mixto" },
   { id: "69", name: "Geova", passes: 1, table: 13, gender: "masculino" },
   { id: "70", name: "Luis Carlos", passes: 1, table: 13, gender: "masculino" },
@@ -107,7 +107,9 @@ const guests = [
   { id: "105", name: "Lucrecia", passes: 1, table: 17, gender: "femenino" },
   { id: "106", name: "Luz", passes: 1, table: 17, gender: "femenino" },
   { id: "107", name: "Mario & Esposa", passes: 1, table: 17, gender: "mixto" },
-  { id: "108", name: "Carol", passes: 1, table: 17, gender: "femenino" }
+  { id: "108", name: "Carol", passes: 1, table: 17, gender: "femenino" },
+  { id: "109", name: "Daniel", passes: 1, table: 17, gender: "femenino" },
+  { id: "110", name: "Magzul y Jessica ", passes: 2, table: 12, gender: "mixto" }
 ];
 
 
