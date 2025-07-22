@@ -51,7 +51,6 @@ const guests = [
   { id: "50", name: "Baltazar & Dora", passes: 2, table: 3, gender: "mixto" },
   { id: "51", name: "Rudy & Marta", passes: 2, table: 5, gender: "mixto" },
   { id: "52", name: "Emily & Alex", passes: 2, table: 3, gender: "mixto" },
-
   { id: "53", name: "Ovidio Pivaral & Sesibel De Pivaral", passes: 2, table: 5, gender: "mixto" },
   { id: "54", name: "Jose & Yes", passes: 5, table: 11, gender: "mixto" },
   { id: "55", name: "Omar & Shirley", passes: 3, table: 3, gender: "mixto" },
@@ -109,7 +108,12 @@ const guests = [
   { id: "107", name: "Mario & Esposa", passes: 1, table: 17, gender: "mixto" },
   { id: "108", name: "Carol", passes: 1, table: 17, gender: "femenino" },
   { id: "109", name: "Daniel", passes: 1, table: 17, gender: "femenino" },
-  { id: "110", name: "Magzul y Jessica ", passes: 2, table: 12, gender: "mixto" }
+  { id: "110", name: "Magzul y Jessica ", passes: 2, table: 12, gender: "mixto" }, 
+  { id: "111", name: "Ivan y Lucy", passes: 2, table: 17, gender: "femenino" },
+  { id: "112", name: "Katherine Reyes", passes: 1, table: 14, gender: "femenino" },
+  { id: "113", name: "Edwin y Astrid", passes: 2, table: 16, gender: "mixto" },
+  { id: "114", name: "Alvaro y Any", passes: 2, table: 9, gender: "mixto" },
+  { id: "115", name: "Samuel", passes: 1, table: 13, gender: "mixto" }
 ];
 
 
