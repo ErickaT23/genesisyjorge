@@ -114,7 +114,7 @@ const guests = [
   { id: "113", name: "Edwin y Astrid", passes: 2, table: 16, gender: "mixto" },
   { id: "114", name: "Alvaro y Any", passes: 2, table: 9, gender: "mixto" },
   { id: "115", name: "Samuel", passes: 1, table: 13, gender: "mixto" },
-  { id: "116", name: "Ronald & Esposa", passes: 1, table: 20, gender: "mixto" }
+  { id: "116", name: "Ronald", passes: 1, table: 20, gender: "masculino" }
 ];
 
 
